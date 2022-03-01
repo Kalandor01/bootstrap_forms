@@ -1,0 +1,76 @@
+
+:root
+{
+    --c_bcg: rgb(40, 47, 87);
+    --c_head: rgb(128, 128, 128);
+    --c_nav: rgb(255, 255, 255);
+    --c_arti: rgb(114, 114, 114);
+    --c_foot: rgb(36, 36, 36);
+
+}
+
+header, nav, article, footer {
+    padding: 5px;
+    border: solid 1px rgb(0, 0, 0);
+}
+
+main, html, body {
+    background-color: var(--c_bcg);
+}
+
+header {
+    background-color: var(--c_head);
+}
+
+nav {
+    background-color: var(--c_nav);
+}
+
+article {
+    background-color: var(--c_arti);
+}
+
+footer {
+    background-color: var(--c_foot);
+    color: white;
+}
+
+label {
+    text-align: right;
+}
+
+.send_button {
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+
+    main {
+        width: 100%;
+        padding: 0;
+        display: inline;
+    }
+
+    .form-group {
+        display: inline;
+    }
+
+    label {
+        text-align: left;
+        display: inline;
+        padding: 0;
+    }
+
+    
+
+    .form-group>div {
+        display: inline;
+        margin: 5px;
+    }
+
+    .form-group>div>div {
+        display: inline;
+        margin: 5px;
+    }
+
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Elégedettségi kérdőív</title>
+</head>
+<body>
+    <main class="container">
+        <header class="text-center"><h1>Elégedettségi kérdőív</h1></header>
+        <nav class="navbar navbar-expand-sm bg-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Csomagküldés</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="eleg.html">Elégedettségi kérdőív</a>
+                </li>
+            </ul>
+        </nav>
+        <article>
+            <form action="#" class="was-validated">
+                <div class="form-group row">
+                  <label for="fname" class="col-6 col-form-label">First Name:</label> 
+                  <div class="col-4">
+                    <input id="fname" name="fname" placeholder="First name" type="text" class="form-control" required="required">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-6 col-form-label" for="lname">Last name:</label> 
+                  <div class="col-4">
+                    <input id="lname" name="lname" placeholder="Last name" type="text" class="form-control" required="required">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="eadress" class="col-6 col-form-label">Email address:</label> 
+                  <div class="col-4">
+                    <input id="eadress" name="eadress" placeholder="Email address" type="text" class="form-control" required="required">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-6">Rating:</label> 
+                  <div class="col-4">
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input name="rating" id="rating_0" type="radio" required="required" class="custom-control-input" value="1"> 
+                      <label for="rating_0" class="custom-control-label">1</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input name="rating" id="rating_1" type="radio" required="required" class="custom-control-input" value="2"> 
+                      <label for="rating_1" class="custom-control-label">2</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input name="rating" id="rating_2" type="radio" required="required" class="custom-control-input" value="3"> 
+                      <label for="rating_2" class="custom-control-label">3</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input name="rating" id="rating_3" type="radio" required="required" class="custom-control-input" value="4"> 
+                      <label for="rating_3" class="custom-control-label">4</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input name="rating" id="rating_4" type="radio" required="required" class="custom-control-input" value="5"> 
+                      <label for="rating_4" class="custom-control-label">5</label>
+                    </div>
+                  </div>
+                </div> 
+                <div class="form-group send_button">
+                    <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+        </article>
+        <footer class="text-center">Copyright ©</footer>
+    </main>
+</body>
+</html>
